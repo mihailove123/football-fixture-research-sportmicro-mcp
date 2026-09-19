@@ -1,0 +1,24 @@
+{
+  "name": "football-fixture-research-sportmicro-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A focused MCP server for grounded football fixture research using the Sportmicro API.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/test/*.test.js",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.2"
+  }
+}
